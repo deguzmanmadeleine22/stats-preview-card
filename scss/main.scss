@@ -1,6 +1,6 @@
 $main-bg: hsl(233, 47%, 7%);
 $card-bg: hsl(244, 38%, 16%);
-$accent: rgb(170, 92, 219);
+$accent: hsl(277, 64%, 61%);
 
 $white: hsl(0, 0%, 100%);
 $main-paragraph: hsla(0, 0%, 100%, 0.75);
@@ -56,17 +56,21 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
- .main-img-overlay {
-    position: absolute;
-    background: rgba(170, 92, 219, 0.7);
-    width: 346px;
-    height: 255px;
-    top: 0;
-    z-index: 2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 
- }
+.main-image-container{
+  background-color: (hsl(277, 64%, 61%));
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  }
+  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+ 
+  }
 
 .main-content {
   background: $card-bg;
@@ -144,7 +148,7 @@ body {
         }
       }
     }
-    .main-img, .main-img-overlay {
+    .main-img {
       border-top-right-radius: 10px;
       border-top-left-radius: 0;
       border-bottom-right-radius: 10px;
